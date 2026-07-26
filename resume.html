@@ -132,7 +132,11 @@
           <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
             
              <div class="row align-items-center justify-content-center">
-               
+
+  Here's the same style but as a **vertical list**, centered horizontally with no bullet points.
+
+```html
+<!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -141,20 +145,62 @@ body {
 }
 
 .vertical-list {
-  list-style: none;
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  gap: 30px;
+  list-style: none;        /* Remove bullet points */
   padding: 20px 0;
   margin: 0;
+  text-align: center;      /* Center the text */
   font-size: 24px;
+}
+
+.vertical-list li {
+  margin: 15px 0;          /* Space between names */
 }
 </style>
 </head>
 <body>
 
 <ul class="vertical-list">
-  <li>Solar Trees </li>
+  <li>Katie</li>
+  <li>Kathleen</li>
+  <li>Rose</li>
+</ul>
+
+</body>
+</html>
+```
+
+If you'd like the entire vertical list centered **both horizontally and vertically** on the page, use this version instead:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.vertical-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+}
+
+.vertical-list li {
+  margin: 15px 0;
+}
+</style>
+</head>
+<body>
+
+<ul class="vertical-list">
+   <li>Solar Trees </li>
 
 
 <li>Harmony</li>
@@ -225,6 +271,11 @@ body {
 </ul>
 
 </body>
+</html>
+
+               
+
+
 <div>
   
   
